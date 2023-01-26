@@ -1,7 +1,5 @@
-// TODO: write your code here
-
 export default class Character {
-// class Character {
+  // class Character {
   constructor(name, type) {
     if (name.length < 2 || name.length > 10) {
       throw new Error('имя должно содержать от 2 до 10 сиволов');
@@ -21,12 +19,12 @@ export default class Character {
 
 
 // class Bowman extends Character {
-//   constructor(name, type) {
+//   constructor(name, type = 'Bowman') {
 //     super(name, type);
-//     this.type = 'Bowman';
+
 //     this.attack = 25;
 //     this.defence = 25;
 //   }
-// }
-// const bowman = new Bowman('Halk', 'Bowman');
+//    }
+// const bowman = new Bowman('Halk');
 // console.log(bowman);

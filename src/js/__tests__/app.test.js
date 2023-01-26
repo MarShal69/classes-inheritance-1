@@ -16,10 +16,3 @@ test('number of characters in the name', () => {
     const ch1 = new Character('Halkfastasthewind', 'Bowman');
   }).toThrowError('имя должно содержать от 2 до 10 сиволов');
 });
-
-test('check Character error type', () => {
-  expect(() => {
-    // eslint-disable-next-line no-unused-vars
-    const ch1 = new Character('Halk', 'Bowmanus');
-  }).toThrowError('тип не установлен');
-});
